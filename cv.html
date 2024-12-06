@@ -27,15 +27,25 @@
             padding-bottom: 8px;
         }
         .section {
-            margin-bottom: 30px;
-            padding-left: 20px;
+            margin-left: 20px;
         }
         .entry {
-            margin-bottom: 20px;
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+        }
+        .entry::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background-color: #0366d6;
         }
         .date {
-            font-weight: bold;
-            color: #24292e;
+            font-weight: 500;
+            color: #666;
         }
         .institution {
             font-weight: 500;
@@ -47,85 +57,85 @@
         a:hover {
             text-decoration: underline;
         }
-        .download-link {
-            margin-top: 20px;
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #f6f8fa;
-            border: 1px solid #e1e4e8;
-            border-radius: 6px;
-            color: #24292e;
+        .publications .entry::before {
+            background-color: #28a745;
         }
-        .download-link:hover {
-            background-color: #f3f4f6;
+        .languages .entry::before {
+            background-color: #6f42c1;
+        }
+        .skills .entry::before {
+            background-color: #d73a49;
         }
     </style>
 </head>
 <body>
     <h1>Curriculum Vitae</h1>
 
-    <a href="cv.pdf" class="download-link" target="_blank">Download PDF version</a>
-
     <h2>Education</h2>
     <div class="section">
         <div class="entry">
-            <p><span class="date">2024-2028</span><br>
-            <span class="institution">PhD student in Mathematics, University of Sherbrooke</span><br>
+            <p><span class="date">2024-2028</span> — PhD student in Mathematics, University of Sherbrooke<br>
             Field: Algebraic and Symplectic geometry</p>
         </div>
         <div class="entry">
-            <p><span class="date">2022-2023</span><br>
-            <span class="institution">PhD student in Mathematics, Sidi Mohamed Ben Abdellah University</span><br>
+            <p><span class="date">2022-2023</span> — PhD student in Mathematics, Sidi Mohamed Ben Abdellah University<br>
             Pure Mathematics<br>
             Thesis: On derivations that satisfy certain algebraic conditions on rings</p>
         </div>
         <div class="entry">
-            <p><span class="date">2020-2022</span><br>
-            <span class="institution">Master's degree, Sidi Mohamed Ben Abdellah University</span><br>
+            <p><span class="date">2020-2022</span> — Master's degree, Sidi Mohamed Ben Abdellah University<br>
             Thesis: Divisors in Algebraic Geometry, Central Simple Algebras and Severi-Brauer Varieties</p>
         </div>
         <div class="entry">
-            <p><span class="date">2016-2020</span><br>
-            <span class="institution">Bachelor's degree, Mouly Ismail University</span><br>
+            <p><span class="date">2016-2020</span> — Bachelor's degree, Mouly Ismail University<br>
             Thesis: The spectrum and the Jacobson radical in a commutative ring</p>
         </div>
     </div>
 
     <h2>Publications</h2>
-    <div class="section">
+    <div class="section publications">
         <div class="entry">
-            <p>• On graded rings with homogeneous derivations</p>
-            <p>• Generalized homogeneous derivations in graded rings</p>
+            <p>On graded rings with homogeneous derivations</p>
+        </div>
+        <div class="entry">
+            <p>Generalized homogeneous derivations in graded rings</p>
         </div>
     </div>
 
     <h2>Teaching Experience</h2>
     <div class="section">
         <div class="entry">
-            <p><span class="date">2024</span><br>
-            Mathematics tutor, Center for mathematics help, Faculty of Sciences, University of Sherbrooke</p>
+            <p><span class="date">2024</span> — Mathematics tutor, Center for mathematics help, Faculty of Sciences, University of Sherbrooke</p>
         </div>
         <div class="entry">
-            <p><span class="date">2020-2023</span><br>
-            Online mathematics tutor (Algebra, real and complex analysis, Topology)</p>
+            <p><span class="date">2020-2023</span> — Online mathematics tutor (Algebra, real and complex analysis, Topology)</p>
         </div>
         <div class="entry">
-            <p><span class="date">2022-2023</span><br>
-            Temporary teacher (Algebra and Analysis-BCG), Faculty of Science and Technology, Fez-Morocco</p>
+            <p><span class="date">2022-2023</span> — Temporary teacher (Algebra and Analysis-BCG), Faculty of Science and Technology, Fez-Morocco</p>
         </div>
     </div>
 
     <h2>Languages</h2>
-    <div class="section">
-        <p>• Tamazight: Native language</p>
-        <p>• French: Fluent</p>
-        <p>• English: Intermediate</p>
+    <div class="section languages">
+        <div class="entry">
+            <p>Tamazight: Native language</p>
+        </div>
+        <div class="entry">
+            <p>French: Fluent</p>
+        </div>
+        <div class="entry">
+            <p>English: Intermediate</p>
+        </div>
     </div>
 
     <h2>Computer Skills</h2>
-    <div class="section">
-        <p>• SageMath, LaTeX, Python</p>
-        <p>• Presentation software</p>
+    <div class="section skills">
+        <div class="entry">
+            <p>SageMath, LaTeX, Python</p>
+        </div>
+        <div class="entry">
+            <p>Presentation software</p>
+        </div>
     </div>
 </body>
 </html>
