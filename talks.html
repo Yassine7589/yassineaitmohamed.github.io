@@ -20,12 +20,30 @@
             border-bottom: 1px solid #eee;
         }
         .talk {
+            position: relative;
             margin-bottom: 25px;
-            padding-left: 20px;
+            padding-left: 25px;
+        }
+        .talk::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background-color: #dc3545;  /* Rouge */
         }
         .date {
             font-weight: bold;
             color: #24292e;
+        }
+        .pdf-link {
+            color: #0366d6;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .pdf-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -33,15 +51,11 @@
     <h1>Talks</h1>
 
     <div class="talk">
-        <p><span class="date">November 2024:</span> On bound quivers, MAT728 Selected Topics in Algebra, Faculty of Sciences, University of Sherbrooke</p>
+        <p><span class="date">November 2024:</span> On bound quivers, MAT728 Selected Topics in Algebra, Faculty of Sciences, University of Sherbrooke [<a href="talks/quivers.pdf" class="pdf-link">PDF</a>]</p>
     </div>
 
     <div class="talk">
-        <p><span class="date">February 2023:</span> On Graded Rings (2), seminar of Non-commutative Algebra, Laboratory of Meddling and Mathematical Structures, Faculty of Science and Technology-Fez</p>
-    </div>
-
-    <div class="talk">
-        <p><span class="date">January 2023:</span> On Graded Rings (1), seminar of Non-commutative Algebra, Laboratory of Meddling and Mathematical Structures, Faculty of Science and Technology-Fez</p>
+        <p><span class="date">January 2023:</span> On Graded Rings (1), seminar of Non-commutative Algebra, Laboratory of Meddling and Mathematical Structures, Faculty of Science and Technology-Fez [<a href="talks/graded_rings.pdf" class="pdf-link">PDF</a>]</p>
     </div>
 
     <div class="talk">
@@ -49,11 +63,7 @@
     </div>
 
     <div class="talk">
-        <p><span class="date">November 2021:</span> About Cartan's equations, seminar of Riemannian geometry, Faculty of Science Dhar El Mahraz</p>
-    </div>
-
-    <div class="talk">
-        <p><span class="date">November 2021:</span> About Riemann-Roch Theorem, seminar of Algebraic geometry, Faculty of Science Dhar El Mahraz</p>
+        <p><span class="date">November 2021:</span> About Riemann-Roch Theorem, seminar of Algebraic geometry, Faculty of Science Dhar El Mahraz [<a href="talks/riemann_roch.pdf" class="pdf-link">PDF</a>]</p>
     </div>
 
     <div class="talk">
