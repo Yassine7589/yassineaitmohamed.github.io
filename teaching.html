@@ -33,13 +33,13 @@
             height: 12px;
         }
         .university::before {
-            background-color: #0366d6;  /* Bleu pour l'université */
+            background-color: #0366d6;
         }
         .online::before {
-            background-color: #28a745;  /* Vert pour les cours en ligne */
+            background-color: #28a745;
         }
         .school::before {
-            background-color: #6f42c1;  /* Violet pour les écoles */
+            background-color: #6f42c1;
         }
         .date {
             font-weight: 500;
@@ -52,11 +52,19 @@
         .position {
             font-weight: 500;
         }
+        .subpage-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
     <h1>Teaching</h1>
-
     <div class="entry university">
         <p>
             <span class="date">September 2024 - December 2024</span><br>
@@ -64,7 +72,6 @@
             <span class="institution">Center for mathematics help, Faculty of Sciences, University of Sherbrooke</span>
         </p>
     </div>
-
     <div class="entry online">
         <p>
             <span class="date">September 2020 - December 2023</span><br>
@@ -72,7 +79,6 @@
             <span class="institution">Algebra - real and complex analysis - Topology</span>
         </p>
     </div>
-
     <div class="entry university">
         <p>
             <span class="date">October 2022 - January 2023</span><br>
@@ -80,7 +86,6 @@
             <span class="institution">Algebra and Analysis-BCG, Faculty of Science and Technology, Fez-Morocco</span>
         </p>
     </div>
-
     <div class="entry school">
         <p>
             <span class="date">September 2022 - November 2023</span><br>
@@ -89,7 +94,6 @@
             <br>Lessons for high school students
         </p>
     </div>
-
     <div class="entry school">
         <p>
             <span class="date">September 2018 - March 2019</span><br>
@@ -98,7 +102,6 @@
             <br>Lessons for secondary school students
         </p>
     </div>
-
     <div class="entry school">
         <p>
             <span class="date">September 2017 - March 2018</span><br>
@@ -107,6 +110,6 @@
             <br>Lessons for secondary school students
         </p>
     </div>
-
+    <a href="courses-exercises.html" class="subpage-link">Courses and Exercises</a>
 </body>
 </html>
