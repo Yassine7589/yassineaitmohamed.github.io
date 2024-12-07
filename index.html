@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yassine Ait Mohamed</title>
     <style>
-        /* Styles de base existants */
+        /* Importer les polices Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap');
+
+        /* Styles de base */
         body {
             max-width: 1100px;
             margin: 40px auto;
             padding: 0 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            font-family: 'Roboto', sans-serif;
             color: #333;
             line-height: 1.6;
+            font-size: 18px;
+            background: linear-gradient(to bottom right, #113F67, #34699A, #56A5D8);
+            background-attachment: fixed;
+            background-size: cover;
         }
         .container {
             display: flex;
@@ -26,6 +33,10 @@
         .content-section {
             flex-grow: 1;
             max-width: 600px;
+            background-color: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         .photo-section {
             width: 200px;
@@ -40,6 +51,7 @@
         h1 {
             margin-bottom: 5px;
             font-size: 32px;
+            font-family: 'Merriweather', serif;
         }
         .subtitle {
             margin-top: 0;
@@ -57,6 +69,10 @@
         h2 {
             margin-top: 30px;
             color: #24292e;
+            font-family: 'Merriweather', serif;
+        }
+        p {
+            margin-bottom: 1.5em;
         }
 
         /* Nouveaux styles pour Useful Links */
@@ -66,12 +82,10 @@
             background-color: #f6f8fa;
             border-radius: 8px;
         }
-
         .useful-links h2 {
             text-align: center;
             margin-bottom: 30px;
         }
-
         .links-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -79,39 +93,34 @@
             max-width: 1100px;
             margin: 0 auto;
         }
-
         .link-category {
             background: white;
             padding: 20px;
             border-radius: 6px;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
-
         .link-category h3 {
             color: #24292e;
             margin-bottom: 15px;
             font-size: 18px;
             border-bottom: 2px solid #0366d6;
             padding-bottom: 5px;
+            font-family: 'Merriweather', serif;
         }
-
         .link-category ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-
         .link-category li {
             margin-bottom: 10px;
         }
-
         .link-category a {
             color: #0366d6;
             text-decoration: none;
             display: block;
             padding: 3px 0;
         }
-
         .link-category a:hover {
             text-decoration: underline;
             background-color: #f1f8ff;
@@ -155,7 +164,6 @@
                     <li><a href="https://mathoverflow.net/questions/tagged/algebraic-geometry" target="_blank">MathOverflow AG</a></li>
                 </ul>
             </div>
-
             <div class="link-category">
                 <h3>Symplectic Geometry</h3>
                 <ul>
@@ -164,8 +172,6 @@
                     <li><a href="https://mathoverflow.net/questions/tagged/symplectic-geometry" target="_blank">MathOverflow SG</a></li>
                 </ul>
             </div>
-
-   
             <div class="link-category">
                 <h3>Research Institutes</h3>
                 <ul>
@@ -175,7 +181,6 @@
                     <li><a href="https://www.newton.ac.uk" target="_blank">Isaac Newton Institute</a></li>
                 </ul>
             </div>
-
             <div class="link-category">
                 <h3>Major Journals</h3>
                 <ul>
@@ -185,59 +190,31 @@
                     <li><a href="https://msp.org/gt" target="_blank">Geometry & Topology</a></li>
                 </ul>
             </div>
-
             <div class="link-category">
                 <h3>Online Resources</h3>
                 <ul>
                     <li><a href="https://www.ams.org/mathscinet/" target="_blank">MathSciNet</a></li>
                     <li><a href="https://zbmath.org/" target="_blank">zbMATH</a></li>
-        
                     <li><a href="https://mathoverflow.net" target="_blank">MathOverflow</a></li>
                 </ul>
             </div>
-
             <div class="link-category">
                 <h3>Learning Resources</h3>
                 <ul>
-                    
                     <li><a href="https://ncatlab.org/nlab/show/HomePage" target="_blank">nLab</a></li>
                     <li><a href="https://mathscinet.ams.org/msc/msc2020.html" target="_blank">Mathematics Subject Classification</a></li>
-
                 </ul>
-
- <div class="link-category">
-     <h3>Algebraic topology</h3>
-    <li><a href="https://analysis-situs.math.cnrs.fr/" target="_blank">Analysis Situs</a></li>
-    <li><a href="https://images.math.cnrs.fr/Topologie-algebrique-des-varietes/" target="_blank">Algebraic Topology of Manifolds</a></li>
-    <li><a href="https://www.imo.universite-paris-saclay.fr/~frederic.paulin/notescours/cours_topoalg.pdf" target="_blank">Algebraic Topology Course - Paris-Saclay University</a></li>
-    <li><a href="https://www.math.univ-paris13.fr/~ginot/MAT557_TA/" target="_blank">Algebraic Topology - MAT 557 - Sorbonne Paris North University</a></li>
-  </ul>
-
-
-                
+            </div>
+            <div class="link-category">
+                <h3>Algebraic topology</h3>
+                <ul>
+                    <li><a href="https://analysis-situs.math.cnrs.fr/" target="_blank">Analysis Situs</a></li>
+                    <li><a href="https://images.math.cnrs.fr/Topologie-algebrique-des-varietes/" target="_blank">Algebraic Topology of Manifolds</a></li>
+                    <li><a href="https://www.imo.universite-paris-saclay.fr/~frederic.paulin/notescours/cours_topoalg.pdf" target="_blank">Algebraic Topology Course - Paris-Saclay University</a></li>
+                    <li><a href="https://www.math.univ-paris13.fr/~ginot/MAT557_TA/" target="_blank">Algebraic Topology - MAT 557 - Sorbonne Paris North University</a></li>
+                </ul>
             </div>
         </div>
     </div>
 </body>
 </html>
-
-<body style="background: linear-gradient(to bottom right, #113F67, #34699A, #56A5D8); background-attachment: fixed; background-size: cover;">
-
-/* Importer les polices Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap');
-
-body {
-  font-size: 18px; /* Augmenter la taille de police pour une meilleure lisibilité */
-  font-family: 'Roboto', sans-serif; /* Utiliser une police adaptée pour le corps de texte */
-  color: #333; /* Adoucir la couleur du texte */
-  background-color: #f8f8f8; /* Utiliser un arrière-plan blanc cassé pour réduire le contraste */
-  line-height: 1.6; /* Aérer le texte avec un interlignage confortable */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Merriweather', serif; /* Utiliser une police avec empattements pour les titres */
-}
-
-p {
-  margin-bottom: 1.5em; /* Ajouter de l'espace sous les paragraphes pour créer des pauses visuelles */
-}
