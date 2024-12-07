@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yassine Ait Mohamed</title>
     <style>
+        /* Styles de base existants */
         body {
             max-width: 1100px;
             margin: 40px auto;
@@ -57,6 +58,64 @@
             margin-top: 30px;
             color: #24292e;
         }
+
+        /* Nouveaux styles pour Useful Links */
+        .useful-links {
+            margin-top: 60px;
+            padding: 40px 20px;
+            background-color: #f6f8fa;
+            border-radius: 8px;
+        }
+
+        .useful-links h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .links-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .link-category {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .link-category h3 {
+            color: #24292e;
+            margin-bottom: 15px;
+            font-size: 18px;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 5px;
+        }
+
+        .link-category ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link-category li {
+            margin-bottom: 10px;
+        }
+
+        .link-category a {
+            color: #0366d6;
+            text-decoration: none;
+            display: block;
+            padding: 3px 0;
+        }
+
+        .link-category a:hover {
+            text-decoration: underline;
+            background-color: #f1f8ff;
+        }
     </style>
 </head>
 <body>
@@ -66,25 +125,87 @@
             <p class="subtitle">PhD Student<br>
             Department of Mathematics<br>
             University of Sherbrooke</p>
-
             <nav>
                 <a href="research.html">Research</a>
                 <a href="talks.html">Talks</a>
                 <a href="cv.html">CV</a>
                 <a href="teaching.html">Teaching</a>
+                <a href="#useful-links">Useful Links</a>
             </nav>
         </div>
-
         <div class="content-section">
             <h2>Introduction</h2>
             <p>I am a PhD student in Mathematics at the <a href="https://www.usherbrooke.ca/mathematiques/">University of Sherbrooke</a>, working in Algebraic and Symplectic geometry. Previously, I was a PhD student at Sidi Mohamed Ben Abdellah University in Pure Mathematics, where I worked on derivations that satisfy certain algebraic conditions on rings.</p>
-
             <h2>Email</h2>
             <p><a href="mailto:yassine.ait.mohamed@usherbrooke.ca">yassine.ait.mohamed@usherbrooke.ca</a></p>
         </div>
-
         <div class="photo-section">
             <img src="photo.jpg" alt="Yassine Ait Mohamed" class="profile-photo">
+        </div>
+    </div>
+
+    <div class="useful-links" id="useful-links">
+        <h2>Useful Links</h2>
+        <div class="links-container">
+            <div class="link-category">
+                <h3>Algebraic Geometry</h3>
+                <ul>
+                    <li><a href="https://stacks.math.columbia.edu" target="_blank">The Stacks Project</a></li>
+                    <li><a href="https://arxiv.org/list/math.AG/recent" target="_blank">arXiv Algebraic Geometry</a></li>
+                    <li><a href="https://mathoverflow.net/questions/tagged/algebraic-geometry" target="_blank">MathOverflow AG</a></li>
+                    <li><a href="https://www.jmilne.org/math/CourseNotes/AG.pdf" target="_blank">Milne's AG Notes</a></li>
+                </ul>
+            </div>
+
+            <div class="link-category">
+                <h3>Symplectic Geometry</h3>
+                <ul>
+                    <li><a href="https://arxiv.org/list/math.SG/recent" target="_blank">arXiv Symplectic Geometry</a></li>
+                    <li><a href="https://symplecticfieldtheorist.wordpress.com" target="_blank">Symplectic Field Theorist</a></li>
+                    <li><a href="https://www-math.mit.edu/~vwg/" target="_blank">Virtual Working Group SG</a></li>
+                    <li><a href="https://mathoverflow.net/questions/tagged/symplectic-geometry" target="_blank">MathOverflow SG</a></li>
+                </ul>
+            </div>
+
+            <div class="link-category">
+                <h3>Research Institutes</h3>
+                <ul>
+                    <li><a href="https://www.ihes.fr" target="_blank">IHÉS</a></li>
+                    <li><a href="https://www.mpim-bonn.mpg.de" target="_blank">Max Planck Institute</a></li>
+                    <li><a href="https://www.msri.org" target="_blank">MSRI</a></li>
+                    <li><a href="https://www.newton.ac.uk" target="_blank">Isaac Newton Institute</a></li>
+                </ul>
+            </div>
+
+            <div class="link-category">
+                <h3>Major Journals</h3>
+                <ul>
+                    <li><a href="https://www.springer.com/journal/222" target="_blank">Inventiones Mathematicae</a></li>
+                    <li><a href="https://annals.math.princeton.edu" target="_blank">Annals of Mathematics</a></li>
+                    <li><a href="https://algebraicgeometry.nl" target="_blank">Algebraic Geometry</a></li>
+                    <li><a href="https://msp.org/gt" target="_blank">Geometry & Topology</a></li>
+                </ul>
+            </div>
+
+            <div class="link-category">
+                <h3>Online Resources</h3>
+                <ul>
+                    <li><a href="https://www.ams.org/mathscinet/" target="_blank">MathSciNet</a></li>
+                    <li><a href="https://zbmath.org/" target="_blank">zbMATH</a></li>
+                    <li><a href="https://arxiv.org/math" target="_blank">arXiv Mathematics</a></li>
+                    <li><a href="https://mathoverflow.net" target="_blank">MathOverflow</a></li>
+                </ul>
+            </div>
+
+            <div class="link-category">
+                <h3>Learning Resources</h3>
+                <ul>
+                    <li><a href="https://www.math.upenn.edu/~volkmer/courses.html" target="_blank">Online Lecture Notes</a></li>
+                    <li><a href="https://ncatlab.org/nlab/show/HomePage" target="_blank">nLab</a></li>
+                    <li><a href="https://mathscinet.ams.org/msc/msc2020.html" target="_blank">Mathematics Subject Classification</a></li>
+                    <li><a href="https://www.youtube.com/@InternationalCentreforTh" target="_blank">ICTP Mathematics</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
