@@ -1,62 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning Paths - Yassine Ait Mohamed</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Learning Paths in Mathematics</title>
+    <style>
+        .learning-path {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .path-step {
+            position: relative;
+            padding: 20px;
+            border-radius: 8px;
+            margin-left: 40px;
+        }
+
+        .path-step::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: -20px;
+            width: 2px;
+            height: calc(100% + 40px);
+            background: linear-gradient(to bottom, transparent, currentColor, currentColor);
+        }
+
+        .path-step:first-child::before {
+            top: 50%;
+        }
+
+        .path-step:last-child::before {
+            height: 50%;
+        }
+
+        /* Étapes colorées */
+        .step-1 {
+            background: rgba(64, 224, 208, 0.1);
+            border: 2px solid turquoise;
+            color: turquoise;
+        }
+
+        .step-2 {
+            background: rgba(147, 112, 219, 0.1);
+            border: 2px solid mediumpurple;
+            color: mediumpurple;
+        }
+
+        .step-3 {
+            background: rgba(255, 165, 0, 0.1);
+            border: 2px solid orange;
+            color: orange;
+        }
+
+        .step-4 {
+            background: rgba(255, 105, 180, 0.1);
+            border: 2px solid hotpink;
+            color: hotpink;
+        }
+
+        .step-5 {
+            background: rgba(50, 205, 50, 0.1);
+            border: 2px solid limegreen;
+            color: limegreen;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: inherit;
+        }
+
+        ul {
+            color: white;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        .prerequisites {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+    </style>
 </head>
 <body>
-    <div class="main-content">
-        <h1>Learning Paths in Mathematics</h1>
+    <h1>Learning Paths in Mathematics</h1>
+    
+    <h2>Derived Algebraic Geometry</h2>
+    <p>A structured learning path from fundamentals to advanced topics.</p>
 
-        <section>
-            <h2>Derived Algebraic Geometry</h2>
-            <p>A structured learning path from fundamentals to advanced topics.</p>
+    <div class="prerequisites">
+        <h3>Prerequisites</h3>
+        <p>Basic background in scheme theory and algebraic topology required.</p>
+    </div>
 
-            <h3>Prerequisites</h3>
-            <p>Basic background in scheme theory and algebraic topology required.</p>
+    <div class="learning-path">
+        <div class="path-step step-1">
+            <h3>1. Category Theory Foundations</h3>
+            <ul>
+                <li>Read first two chapters of Schapira's lecture notes</li>
+                <li>Study Gabriel-Zisman's "Calculus of fractions and homotopy theory" (Ch. I and II)</li>
+            </ul>
+        </div>
 
-            <div class="learning-path">
-                <h3>1. Category Theory Foundations</h3>
-                <ul>
-                    <li>Read first two chapters of Schapira's lecture notes</li>
-                    <li>Study Gabriel-Zisman's "Calculus of fractions and homotopy theory" (Ch. I and II)</li>
-                </ul>
+        <div class="path-step step-2">
+            <h3>2. Abstract Homotopy Theory</h3>
+            <ul>
+                <li>Cisinski's notes covering simplicial sets and model categories</li>
+                <li>Quillen's "Homotopical algebra" (Chapter I)</li>
+                <li>Cisinski's mini-course notes on stable ∞-categories</li>
+                <li>Joyal's notes on quasi-categories</li>
+            </ul>
+        </div>
 
-                <h3>2. Abstract Homotopy Theory</h3>
-                <ul>
-                    <li>Cisinski's notes covering simplicial sets and model categories</li>
-                    <li>Quillen's "Homotopical algebra" (Chapter I)</li>
-                    <li>Cisinski's mini-course notes on stable ∞-categories</li>
-                    <li>Joyal's notes on quasi-categories</li>
-                </ul>
+        <div class="path-step step-3">
+            <h3>3. Derived Commutative Algebra</h3>
+            <ul>
+                <li>Moerdijk-Toen: "Simplicial Methods for Operads and Algebraic Geometry" (Lecture 4, Part II)</li>
+                <li>Lurie's thesis (Section 3)</li>
+                <li>Toen-Vezzosi's HAG II (Section 2.2.2)</li>
+            </ul>
+        </div>
 
-                <h3>3. Derived Commutative Algebra</h3>
-                <ul>
-                    <li>Moerdijk-Toen: "Simplicial Methods for Operads and Algebraic Geometry" (Lecture 4, Part II)</li>
-                    <li>Lurie's thesis (Section 3)</li>
-                    <li>Toen-Vezzosi's HAG II (Section 2.2.2)</li>
-                </ul>
+        <div class="path-step step-4">
+            <h3>4. Stacks and Advanced Topics</h3>
+            <ul>
+                <li>Toen's notes on algebraic stacks</li>
+                <li>Preygel's notes</li>
+                <li>Lurie's "On ∞-topoi"</li>
+            </ul>
+        </div>
 
-                <h3>4. Stacks and Advanced Topics</h3>
-                <ul>
-                    <li>Toen's notes on algebraic stacks</li>
-                    <li>Preygel's notes</li>
-                    <li>Lurie's "On ∞-topoi"</li>
-                </ul>
-
-                <h3>5. Recommended Papers for Practice</h3>
-                <ul>
-                    <li>Antieau-Gepner: "Brauer groups and étale cohomology in derived algebraic geometry"</li>
-                    <li>Bhatt: "p-adic derived de Rham cohomology"</li>
-                    <li>Toen: "Derived Azumaya algebras"</li>
-                    <li>Gaitsgory-Rozenblyum: "A study in derived algebraic geometry"</li>
-                </ul>
-            </div>
-        </section>
-
-        <p class="note"><em>Note: This learning path can be modified according to specific interests and background.</em></p>
+        <div class="path-step step-5">
+            <h3>5. Recommended Papers for Practice</h3>
+            <ul>
+                <li>Antieau-Gepner: "Brauer groups and étale cohomology in derived algebraic geometry"</li>
+                <li>Bhatt: "p-adic derived de Rham cohomology"</li>
+                <li>Toen: "Derived Azumaya algebras"</li>
+                <li>Gaitsgory-Rozenblyum: "A study in derived algebraic geometry"</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
