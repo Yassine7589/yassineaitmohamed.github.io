@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <title>Learning Paths in Mathematics</title>
     <style>
+        body {
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+
         .learning-path {
             display: flex;
             flex-direction: column;
@@ -16,6 +21,7 @@
             padding: 20px;
             border-radius: 8px;
             margin-left: 40px;
+            background: white;
         }
 
         .path-step::before {
@@ -38,55 +44,57 @@
 
         /* Étapes colorées */
         .step-1 {
-            background: rgba(64, 224, 208, 0.1);
-            border: 2px solid turquoise;
-            color: turquoise;
+            border: 2px solid #4682B4;
+            box-shadow: 0 2px 5px rgba(70, 130, 180, 0.2);
         }
 
         .step-2 {
-            background: rgba(147, 112, 219, 0.1);
-            border: 2px solid mediumpurple;
-            color: mediumpurple;
+            border: 2px solid #9370DB;
+            box-shadow: 0 2px 5px rgba(147, 112, 219, 0.2);
         }
 
         .step-3 {
-            background: rgba(255, 165, 0, 0.1);
-            border: 2px solid orange;
-            color: orange;
+            border: 2px solid #FF8C00;
+            box-shadow: 0 2px 5px rgba(255, 140, 0, 0.2);
         }
 
         .step-4 {
-            background: rgba(255, 105, 180, 0.1);
-            border: 2px solid hotpink;
-            color: hotpink;
+            border: 2px solid #20B2AA;
+            box-shadow: 0 2px 5px rgba(32, 178, 170, 0.2);
         }
 
         .step-5 {
-            background: rgba(50, 205, 50, 0.1);
-            border: 2px solid limegreen;
-            color: limegreen;
+            border: 2px solid #32CD32;
+            box-shadow: 0 2px 5px rgba(50, 205, 50, 0.2);
         }
 
         h3 {
             margin-top: 0;
-            color: inherit;
+            color: #333;
         }
 
         ul {
-            color: white;
+            color: #000;
             list-style-type: none;
             padding-left: 0;
         }
 
         li {
             margin: 10px 0;
+            color: #333;
         }
 
         .prerequisites {
-            background: rgba(255, 255, 255, 0.1);
+            background: white;
             padding: 15px;
             border-radius: 8px;
             margin-bottom: 30px;
+            border: 2px solid #666;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        p {
+            color: #333;
         }
     </style>
 </head>
